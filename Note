@@ -1,0 +1,32 @@
+
+- React Component is devided into two Component
+Component is the part of your website(User interface) such as header, sideNav, Main Content, and footer. 
+Component can have another component or all of the component. basically, it is called as App Component or Root
+Component is reusable, so you can use it in the another UI
+
+1. Stateless Functional Component (also known as Dumb/Presentational.)
+- it is basically fucntion which return the HTML, i.e the fucntion which return the <h1> tag. 
+it can have props(properties) parameter of the fucntion
+function welcome(props){
+    return <h1>Hello, {props.name}</h1>
+}
+
+2. Statefull Class Component (also known as Smart/Container)
+- it is class which extend component class, it has method render() which return the HTML, 
+Class Component can receive props as parameter, the Class component example will be the following.
+it has lifecycle hooks and private data(state)
+class Welcome extends React.Component {
+    render(){
+        return <h1>Hello, {this.props.name}</h1>
+    }
+}
+
+========================================================================
+- Hooks
+it lets you to use state and other react feature without writing a class. it is backaward compatible
+
+
+- JSX (JavaScript XML)
+it is extension to the JavaScript language syntax. we can Write XML-like code for elements and compoent. it make code simpler and more elegant
+JSX tags also have a tag name, attribute and children like other XML. 
+
